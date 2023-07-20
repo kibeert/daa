@@ -17,7 +17,6 @@ def find_town_chief(trust):
             else:
                 
                 return -1
-
     
     for person in range(1, n + 1):
         if person != town_chief_candidate and town_chief_candidate not in graph[person]:
