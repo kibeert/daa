@@ -1,3 +1,6 @@
+import time
+
+start_time =time.time()
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -30,7 +33,11 @@ def merge(left, right):
     result.extend(right[j:])
     return result
 
+
 # Example usage:
 arr = [38, 27, 43, 3, 9, 82, 10]
 sorted_arr = merge_sort(arr)
 print(sorted_arr)  # Output: [3, 9, 10, 27, 38, 43, 82]
+end_time = time.time()
+elapsed_time =end_time - start_time
+print("Elapsed time: {} seconds".format(elapsed_time))
