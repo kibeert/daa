@@ -1,3 +1,6 @@
+import time 
+
+start_time = time.time()
 def quadratic_function(a, b, c, x):
     return a * x * 2 + b * x + c
 
@@ -39,3 +42,6 @@ if root is not None:
     print(f"The root of the quadratic equation is approximately: {root}")
 else:
     print("No root found within the given interval.")
+end_time= time.time()
+elapsed_time = end_time-start_time
+print("elapsed time:{}seconds").format(elapsed_time)

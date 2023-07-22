@@ -35,9 +35,9 @@ def merge(left, right):
 
 
 # Example usage:
-arr = [38, 27, 43, 3, 9, 82, 10]
+arr = [20, 27, 43, 4, 79, 8, 15]
 sorted_arr = merge_sort(arr)
 print(sorted_arr)  # Output: [3, 9, 10, 27, 38, 43, 82]
 end_time = time.time()
 elapsed_time =end_time - start_time
-print("Elapsed time: {} seconds".format(elapsed_time))
+print("Elapsed time:{} seconds".format(elapsed_time))
