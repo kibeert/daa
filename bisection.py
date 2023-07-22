@@ -1,5 +1,7 @@
+import time
+start_time = time.time()
 def quadratic_function(a, b, c, x):
-    return a * x ** 2 + b * x + c
+    return a * x * 2 + b * x + c
 
 def bisection_method(a, b, c, left, right, tolerance=1e-6, max_iterations=1000):
     if quadratic_function(a, b, c, left) * quadratic_function(a, b, c, right) >= 0:
@@ -34,3 +36,6 @@ root = bisection_method(a, b, c, left_endpoint, right_endpoint)
 
 if root is not None:
     print(f"The root of the quadratic equation is approximately: {root}")
+end_time =time.time()
+time_taken = end_time- start_time
+print("Elapsed time:{} seconds".format(time_taken))

@@ -1,13 +1,14 @@
+#installing libraries .matplotlib is a plotting library while numpy is numerical python
 import matplotlib.pyplot as plt
 import numpy as np
-import tkinter as tk
 
-#function to plot the three flavours of Big O
+
+#creating a function that will plot the flavours of Big o
 def plot_big_o():
-    #input size range
+    # size range
     n = np.linspace(1, 10, 100)
 
-    #define the three flavours of big O
+    #defining the three flavours of big O
     constant = np.ones_like(n)
     logarithmic =np.log(n)
     linear = n
@@ -25,5 +26,5 @@ def plot_big_o():
 
     #display the plot
     plt.show()
-#call the  function to display the graph
+#call the  function to display the plotted graph
 plot_big_o()
