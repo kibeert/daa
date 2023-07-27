@@ -44,4 +44,4 @@ else:
     print("No root found within the given interval.")
 end_time= time.time()
 elapsed_time = end_time-start_time
-print("elapsed time:{}seconds").format(elapsed_time)
+print("elapsed time:{}seconds".format(elapsed_time))
